@@ -19,6 +19,7 @@ int findValueIndex(std::vector<int> * myVect, int valToFind)
     return index_location; 
 }
 
+//removes all instances of a given int as given by the user
 void removeAllInstances(std::vector<int> * myVect, int toRemove)
 {
     auto it = (*myVect).begin(); 
@@ -35,6 +36,7 @@ void removeAllInstances(std::vector<int> * myVect, int toRemove)
     }
 }
 
+//Prepends an item to the start of a vector via the insert function 
 void prependVector(std::vector<int> * myVect, int toPrepend)
 {
     //Need to use iterator to use insert so we just set our iterator to the start of the vector since we are pre-pending. 
@@ -43,11 +45,13 @@ void prependVector(std::vector<int> * myVect, int toPrepend)
     (*myVect).insert(it, toPrepend); 
 }
 
+//Prints the size of the vector (i.e. how many items it can hold)
 void printVectSize(std::vector<int> * myVect)
 {
     std::cout << "The size of the vector is: " << (*myVect).size() << std::endl; 
 }
 
+//Simple print using for loop 
 void print1DStandard(const std::vector<int> * myVect)
 {
     for(int i = 0; i < (*myVect).size(); i++)
@@ -56,6 +60,7 @@ void print1DStandard(const std::vector<int> * myVect)
     }
 }
 
+//Prints odd indexed items from the vector provided, this is to utilize pointers 
 void print1DPointersOdd(std::vector<int> * myVect)
 {
     //Print odd indicies 
@@ -65,6 +70,7 @@ void print1DPointersOdd(std::vector<int> * myVect)
     }
 }
 
+//Formatted print for whether or not the vector is empty 
 std::string print_is_empty(std::vector<int> toCheck)
 {
     if(toCheck.empty())
@@ -75,6 +81,7 @@ std::string print_is_empty(std::vector<int> toCheck)
     return "false"; 
 }
 
+//Creates a 1D vector which is just the values 1-10 for testing purposes git
 std::vector<int> * create_1D()
 {
     //Just create 1D Vector with given values 
