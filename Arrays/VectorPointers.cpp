@@ -1,6 +1,9 @@
 #include <iostream>
 #include <vector> 
+#include "Arrays.h"
 //Vector.empty() is O(1) and vector.size() == 0 could be O(n) if used on a std::list thus should try to use .empty always to prevent runtime slowdowns 
+
+namespace zw{
 
 int findValueIndex(std::vector<int> * myVect, int valToFind)
 {
@@ -160,3 +163,5 @@ int main ()
 
     return 0; 
 }
+
+} //namespace zw 
