@@ -11,10 +11,10 @@ namespace zw {
 template <class T>
 class LinkedList {
  public:
-  explicit LinkedList() : head_(nullptr) {}
-  ~LinkedList();
+  explicit LinkedList() : head_(nullptr) {} //explicit usage to ensure it is called how we want
+  ~LinkedList();  //Destructor
   LinkedList(const LinkedList &) = delete;
-  LinkedList &operator=(const LinkedList &) = delete;
+  LinkedList &operator=(const LinkedList &) = delete; //Overloaded assignment operator?
   // Returns the number of data elements in list.
   int Size() const;
   // Adds an item to the front of the list
