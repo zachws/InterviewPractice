@@ -38,12 +38,6 @@ private:
 };
 
 
-
-};
-
-
-
-
 }//end namespace zw 
 
 #endif  // PROJECT_QUEUE_ARRAY_H
