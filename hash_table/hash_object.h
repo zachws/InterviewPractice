@@ -27,7 +27,7 @@ class HashObject {
   //Setter for the key_ 
   void SetKey(const std::string key) { key_ = key; }
   //Setter for the _value
-  void SetValue(const std::string value) { value_ = value; }
+  void SetValue(const std::string value) { value_ = value; }    
   //Shows whether key is Dummy or not I think 
   static const std::string GetDummyKey() { return "<Dummy>"; }
   //Returns the string that the key is infact null 
